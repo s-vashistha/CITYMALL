@@ -5,7 +5,7 @@ const DisasterList = () => {
   const [disasters, setDisasters] = useState([]);
 
   const loadDisasters = async () => {
-    const res = await fetch('https://your-backend.onrender.com/disasters');
+    const res = await fetch('https://citymall-backend-rjs7.onrender.com');
     const data = await res.json();
     setDisasters(data);
   };
