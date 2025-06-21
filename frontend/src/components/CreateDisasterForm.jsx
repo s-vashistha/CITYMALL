@@ -10,7 +10,7 @@ const CreateDisasterForm = ({ onCreated }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('https://your-backend.onrender.com/disasters', {
+    const response = await fetch('https://disaster-response-backend-uk7i.onrender.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
